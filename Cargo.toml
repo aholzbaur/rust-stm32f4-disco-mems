@@ -30,3 +30,16 @@ codegen-units = 1
 incremental = false
 debug = true
 lto = true
+opt-level = 1
+
+[profile.release.package."*"]
+opt-level = "s"
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+lto = true
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = "s"
